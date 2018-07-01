@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/notescontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@color/blue"
+        android:padding="10dp"
+        android:textSize="23sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+    >
+    <EditText
+        android:id="@+id/notesinput"
+        android:layout_width="500dp"
+        android:paddingTop="25dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+        <Button
+            android:id="@+id/commit"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="commit"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="cancel"
+            android:layout_weight="1"/>
+    </LinearLayout>
+        <CheckBox android:id="@+id/Important"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Important"
+            android:background="@color/white"/>
+    </LinearLayout>
+
+</LinearLayout>
